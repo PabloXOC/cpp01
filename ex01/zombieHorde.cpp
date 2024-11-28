@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-Zombie* zombieHorde( int N, std::string name )
+Zombie* zombieHorde( int N, std::string name)
 {
 	int	i;
 	Zombie* Zombie_horde;
@@ -14,7 +14,6 @@ Zombie* zombieHorde( int N, std::string name )
 		Zombie_horde[i].setname(name);
 		i++;
 	}
-	
 
 	return (Zombie_horde);
 }
