@@ -2,18 +2,24 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-int main() {
-    Weapon sword("sword");
-    Weapon axe("axe");
 
-    HumanA john("John", sword);
-    john.attack(); // John attacks with their sword
-
-    HumanB doe("Doe");
-    doe.attack(); // Doe has no weapon to attack with!
-
-    doe.setWeapon(axe);
-    doe.attack(); // Doe attacks with their axe
-
-    return 0;
+int main()
+{
+    {
+        Weapon club = Weapon("crude spiked club");
+        HumanA bob("Bob", club);
+        bob.attack();
+        club.setType("some other type of club");
+        bob.attack();
+    }
+    {
+        Weapon club = Weapon("crude spiked club");
+        HumanB jim("Jim");
+        jim.attack();
+        jim.setWeapon(club);
+        jim.attack();
+        club.setType("some other type of club");
+        jim.attack();
+    }
+return 0;
 }
