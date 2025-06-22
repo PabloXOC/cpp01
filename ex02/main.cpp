@@ -8,7 +8,7 @@ int main() {
     std::string* stringPTR = &brain;
 
     // A reference to the string
-    std::string& stringREF = brain;
+    std::string &stringREF = brain;
 
     // Print the memory addresses
     std::cout << "Memory address of the string variable: " << &brain << std::endl;

@@ -19,6 +19,6 @@ void	Zombie::announce() const {
 	<< std::endl;
 }
 
-void	Zombie::setname(std::string name) {
+void	Zombie::setName(std::string name) {
 	this->name = name;
 }

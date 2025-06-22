@@ -15,7 +15,7 @@ public:
 	
 	//functions
 	void announce() const;
-	void setname(std::string name);
+	void setName(std::string name);
 };
 
 
